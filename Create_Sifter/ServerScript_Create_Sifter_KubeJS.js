@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info("Adding Recipes")
+console.info("Adding Sifting Recipes")
 
 ServerEvents.recipes(e => {
     e.remove({ type: 'createsifter:sifting'})
@@ -19,5 +19,5 @@ ServerEvents.recipes(e => {
     e.recipes.createsifterSifting([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.15)], ['minecraft:gravel', 'createsifter:zinc_mesh'])
     e.recipes.createsifterSifting([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.20)], ['minecraft:gravel', 'createsifter:brass_mesh'])
     e.recipes.createsifterSifting([Item.of('minecraft:iron_nugget').withChance(0.25)], ['minecraft:gravel', 'kubejs:magnetic_mesh'])
-    console.info("Recipes Added Sucessfully")
+    console.info("Sifting Recipes Added Sucessfully")
 })
