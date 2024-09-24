@@ -1,11 +1,8 @@
 // priority: 0
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = true
-settings.logErroringRecipes = true
+console.info("Starting Item Registration")
 
-// Listen to item registry event
-onEvent('item.registry', event => {
-    event.create('magnetic_mesh','createsifter:mesh').displayName('Megnetic Mesh').parentModel("createsifter:block/meshes/mesh").texture("mesh","minecraft:iron_block").texture("frame","minecraft:oak_wood");
+StartupEvents.registry('item', e => {
+    e.create('magnetic_mesh','createsifter:mesh').displayName('Magnetic Mesh').parentModel("createsifter:block/meshes/mesh").texture("mesh","kubejs:item/magnet_mesh").texture("frame","kubejs:item/iron_block");
+    console.info("Item Registration Completed Successfully")
 })
