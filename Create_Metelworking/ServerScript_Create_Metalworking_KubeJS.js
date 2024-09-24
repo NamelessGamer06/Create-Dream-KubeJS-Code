@@ -1,8 +1,9 @@
 // priority: 0
 
-console.info("Adding Metalworking Recipes")
 
 ServerEvents.recipes(e => {
+    console.info("Adding Stage 1 Metalworking Recipes")
+    
     e.remove({ type: 'create:crushing', input: 'minecraft:copper_ore'})
     e.remove({ type: 'create:crushing', input: 'minecraft:iron_ore'})
     e.remove({ type: 'create:crushing', input: 'create:zinc_ore'})
@@ -39,5 +40,5 @@ ServerEvents.recipes(e => {
         ],
             'create:zinc_ore')
 
-    console.info("Metalworking Recipes Added Sucessfully")
+    console.info("Stage 1 Metalworking Recipes Added Sucessfully")
 })

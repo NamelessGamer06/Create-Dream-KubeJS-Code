@@ -1,8 +1,9 @@
 // priority: 0
 
-console.info("Adding Extruding Recipes")
 
 ServerEvents.recipes(e => {
+    console.info("Adding Extruding Recipes")
+    
     e.remove({ type: 'create_mechanical_extruder:extruding'})
     e.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:cobblestone'), [Fluid.of('minecraft:water'), Fluid.of('minecraft:lava')]).requiredBonks(5)
     e.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:netherrack'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:lava')])

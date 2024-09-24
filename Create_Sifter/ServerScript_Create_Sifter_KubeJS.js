@@ -1,8 +1,9 @@
 // priority: 0
 
-console.info("Adding Sifting Recipes")
 
 ServerEvents.recipes(e => {
+  console.info("Adding Sifting Recipes")
+  
     e.remove({ type: 'createsifter:sifting'})
     e.shaped('kubejs:magnetic_mesh', [
         'AAA', 
