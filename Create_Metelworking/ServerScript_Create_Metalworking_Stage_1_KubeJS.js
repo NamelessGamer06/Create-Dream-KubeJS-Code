@@ -11,7 +11,7 @@ ServerEvents.recipes(e => {
     e.recipes.createCrushing(
         [
             '5x kubejs:copper_gravel_mix',
-            Item.of('5x create:copper_nugget').withChance(0.1),
+            Item.of('3x create:copper_nugget').withChance(0.1),
             Item.of('2x create:experience_nugget').withChance(0.75)
         ],
             'minecraft:copper_ore')
