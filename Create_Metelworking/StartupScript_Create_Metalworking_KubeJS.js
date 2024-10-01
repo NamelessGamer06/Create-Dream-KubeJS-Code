@@ -18,5 +18,12 @@ StartupEvents.registry('item', e => {
     e.create('pure_zinc_pebbles').displayName('Pure Zinc Pebbles').texture('create_metalworking:item/pure_zinc_pebbles')
     e.create('pure_gold_pebbles').displayName('Pure Gold Pebbles').texture('create_metalworking:item/pure_gold_pebbles')
 
+    // Stage 3
+
+    e.create('pure_copper_chunk').displayName('Pure Copper Chunk').texture('create_metalworking:item/pure_copper_chunk')
+    e.create('pure_iron_chunk').displayName('Pure Iron Chunk').texture('create_metalworking:item/pure_iron_chunk')
+    e.create('pure_zinc_chunk').displayName('Pure Zinc Chunk').texture('create_metalworking:item/pure_zinc_chunk')
+    e.create('pure_gold_chunk').displayName('Pure Gold Chunk').texture('create_metalworking:item/pure_gold_chunk')
+
     console.info("Metalworking Item Registration Completed Successfully")
 })

@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 5
 
 
 ServerEvents.recipes(e => {
@@ -10,31 +10,31 @@ ServerEvents.recipes(e => {
     e.remove({ type: 'create:crushing', input: 'minecraft:gold_ore'})
     e.recipes.createCrushing(
         [
-            '5x kubejs:copper_gravel_mix',
+            '2x kubejs:copper_gravel_mix',
             Item.of('3x create:copper_nugget').withChance(0.1),
             Item.of('2x create:experience_nugget').withChance(0.75)
         ],
-            'minecraft:copper_ore')
+            '#forge:ores/copper')
     
     e.recipes.createCrushing(
         [
-            '2x kubejs:iron_gravel_mix',
+            'kubejs:iron_gravel_mix',
             Item.of('2x minecraft:iron_nugget').withChance(0.1),
             Item.of('2x create:experience_nugget').withChance(0.75)
         ],
-            'minecraft:iron_ore')
+            '#forge:ores/iron')
 
     e.recipes.createCrushing(
         [
-            '2x kubejs:gold_gravel_mix',
+            'kubejs:gold_gravel_mix',
             Item.of('2x minecraft:gold_nugget').withChance(0.1),
             Item.of('2x create:experience_nugget').withChance(0.75)
         ],
-            'minecraft:gold_ore')
+            '#forge:ores/gold')
 
     e.recipes.createCrushing(
         [
-            '2x kubejs:zinc_gravel_mix',
+            'kubejs:zinc_gravel_mix',
             Item.of('2x create:zinc_nugget').withChance(0.1),
             Item.of('2x create:experience_nugget').withChance(0.75)
         ],
